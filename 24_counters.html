@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h2::before {
+            counter-increment: section;
+            content: "section" counter(section) ":";
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counters</title>
+</head>
+<body>
+    <h1>css counters</h1>
+    <h2>HTML tutorial</h2>
+    <h3>CSS tutorial</h3>
+    <h4>Javascript tutorial</h4>
+</body>
+</html>
